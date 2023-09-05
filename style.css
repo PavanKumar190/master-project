@@ -15,7 +15,9 @@ body {
     font-weight: 900;
     line-height: 1.5;
 }
-
+.carousel-img{
+    height: 700px;
+}
 #menu-bar {
     color: #fff;
     border: .1rem solid #fff;
@@ -89,6 +91,7 @@ header {
     overflow: hidden;
     top: 0%;
     width: 100%;
+    
 }
 
 /*-----------header-menu------------*/
@@ -585,6 +588,7 @@ img {
 .about-section {
     position: relative;
     padding: 120px 0 70px;
+    margin-top: 7%;
 }
 
 .about-section .sec-title {
@@ -697,7 +701,9 @@ img {
 /* about end */
 
 /* sevices start */
-
+.services{
+    margin-top: 30px;
+}
 .color {
     background: #007bff !important;
 }
@@ -1042,7 +1048,8 @@ p {
 /* testimonals start */
 
 .testimonial_section {
-    margin-bottom: 4%;
+    margin-bottom: 7%;
+    margin-top: 7%;
 }
 
 .testimonial_section {
