@@ -39,24 +39,23 @@
 </head>
 
 <body>
-    <!-- <div class="top-nav">
-        <div class="container">
-            <div class="row justify-content-between">
-                <div class="col-auto pt-2">
-                    <p class="text-danger" > <i class="fas fa-envelope mail-bg"></i> Hello@gmail.com</p>
-                    <p class="text-danger"><i class="fab fa-whatsapp whatsapp-bg"></i> +91 9876543210</p>
-                </div>
-                <div class="col-auto social-icons">
-                    <a href="#" ><i class="fab fa-facebook-f facebook-bg"></i></a>
-                    <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
-                     <a href="#"><i class="fab fa-instagram instagram-bg"></i></a>
 
-                </div>
-            </div>
+    <nav class = "navbar">
+        <a href = "#" class = "logo">Master Touch</a>
+        <div class = "nav-links">
+            <ul>
+                <li class="active"><a href="#" class="links">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Reviews</a></li>
+            </ul>
 
-        </div> -->
-    </div>
-    <header>
+        </div>
+        <img src="menu-btn.png" alt="menu hamburger" class = "menu-hamburger" >
+    </nav>
+    <header></header>
+    <!-- <header>
         <div class="header-main">
             <div class="container">
                 <nav id='cssmenu'>
@@ -78,8 +77,8 @@
                 </nav>
             </div>
         </div>
-    </header>
-    <div style="margin-top: 60px;">
+    </header> -->
+    <!-- <div style="margin-top: 60px;">
     <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
@@ -95,27 +94,27 @@
           </div>
           <div class="carousel-item">
             <img src="about-us.png" class="d-block w-100 carousel-img" alt="about us image">
-             <!-- <div class="carousel-caption">
+             <div class="carousel-caption">
                 <h3 class="text-white">discover a new you!</h3>
                 <p>we Bring your home to lively colors</p>
                 <a class="btn btn-danger" href="#">About Us</a> 
-            </div>  -->
+            </div> 
           </div>
           <div class="carousel-item">
             <img src="service.png" class="d-block w-100 carousel-img" alt="service image">
-            <!-- <div class="carousel-caption">
+            <div class="carousel-caption">
                 <h3 class="text-white">discover a new you!</h3>
                 <p>we Bring your home to lively colors</p>
                 <a class="btn btn-danger" href="#">Services</a>
-            </div> -->
+            </div>
           </div>
           <div class="carousel-item">
             <img src="contact-us.png" class="d-block w-100 carousel-img" alt="contact image">
-            <!-- <div class="carousel-caption">
+            <div class="carousel-caption">
                 <h3 class="text-white">discover a new you!</h3>
                 <p>we Bring your home to lively colors</p>
                 <a class="btn btn-danger" href="#">Contact Us</a>
-            </div> -->
+            </div>
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-target="#carouselExampleCaptions" data-slide="prev">
@@ -127,7 +126,7 @@
           <span class="sr-only">Next</span>
         </button>
       </div>
-    </div>
+    </div> -->
 
     <!-- carousal end -->
 
@@ -735,6 +734,16 @@
         s0.parentNode.insertBefore(s1, s0);
     })();
 </script>
+<script>
+    const menuHamburger = document.querySelector(".menu-hamburger")
+        const navLinks = document.querySelector(".nav-links")
+ 
+        menuHamburger.addEventListener('click',()=>{
+        navLinks.classList.toggle('mobile-menu')
+        })
+</script>
+
+C:\Users\lenovo\OneDrive\Documents\MastersTouch\index.html
 <!--End of Tawk.to Script-->
 
 </html>
