@@ -20,11 +20,54 @@ body {
 header{
     height:100vh;
     width: 100vw;
-    background-image: url(landscape.jpg);
+    background-image: url(bg-wall-paint.jpg);
     background-size: cover;
 }
+.centered-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; /* Optional, for centering text horizontally */
+}
 
-.navbar{
+.centered-content h1 {
+    /* Additional styles for your <h1> tag, if needed */
+    color: white; /* Example text color */
+    font-size: 36px; /* Example font size */
+}
+.centered-content p{
+    color: #fff;
+    font-size: 25px;
+}
+
+.centered-content h1:hover{
+    color: #ff0000; /* Change to the desired color when hovered (e.g., red) */
+    transition: color 0.3s ease;
+}
+
+.centered-content p:hover{
+    color: #ff0000; /* Change to the desired color when hovered (e.g., red) */
+    transition: color 0.3s ease;
+}
+@media screen and (max-width: 768px) {
+    /* Adjust styles for screens up to 768px wide */
+    header {
+        height: 70vh;
+        
+        /* Add other styles as needed */
+    }
+    .centered-content h1 {
+        color: white; 
+        font-size: 25px; 
+    }
+    .centered-content p{
+        color: #fff;
+        font-size: 15px;
+    }
+}
+
+.navbar-top{
     position: absolute;
     padding: 50px;
     display: flex;
@@ -34,30 +77,47 @@ header{
     box-sizing: border-box;
 }
 
-.navbar a{
+.navbar-top a{
     color:white;
 }
-
-.navbar .logo{
-    font-size: 2em;
-    font-weight: bold;
+.navbar-top .logo{
+    position: relative;
+    z-index: 123;
+    padding-top: 20px;
+    font: 18px verdana;
+    color: #9903f6;
+    float: left;   
 }
 
-.navbar .nav-links ul{
+.navbar-top .logo span {
+    color: #f9f6f8;
+    font-family: cursive;
+}
+/* .navbar-top .logo{
+    font-size: 2em;
+    font-weight: bold;
+} */
+
+.navbar-top .nav-links ul{
     display: flex;
 
 }
 
-.navbar .nav-links ul li {
+.navbar-top .nav-links ul li {
     margin: 0 25px;
 }
 
-.navbar .nav-links ul li.active a {
+.navbar-top .nav-links ul li.active a {
     color: red;
     font-weight: 600;
+    text-decoration: none;
+}
+.navbar-top .nav-links ul li a {
+    font-weight: 600;
+    text-decoration: none;
 }
 
-.navbar .menu-hamburger{
+.navbar-top .menu-hamburger{
     display: none;
     position: absolute;
     top:50px;
@@ -67,15 +127,15 @@ header{
 
 
 @media screen and (max-width:900px){
-    .navbar{
+    .navbar-top{
         padding: 0px;
     }
-    .navbar .logo{
+    .navbar-top .logo{
         position: absolute;
         top: 40px;
         left: 30px;
     }
-    .navbar .menu-hamburger{
+    .navbar-top .menu-hamburger{
         display: block;
     }
     .nav-links {
@@ -100,7 +160,7 @@ header{
         flex-direction: column;
         align-items: center;
     }
-    .navbar .nav-links ul li {
+    .navbar-top .nav-links ul li {
         margin: 25px 0;
         font-size:1.2em;
     }
@@ -806,7 +866,7 @@ p {
 }
 
 .testimonial_section .about_content .layer_content a:hover {
-    color: #ff5e14;
+    color: #ff14b5;
 }
 
 .testimonial_section .testimonial_box {
@@ -815,13 +875,13 @@ p {
 }
 
 .testimonial_section .testimonial_box .testimonial_container {
-    background-color: #ff5e14;
+    background-color: #ff14b5;
     margin-left: -170px !important;
     position: relative;
 }
 
 .testimonial_section .testimonial_box .testimonial_container .background_layer {
-    background-color: #ff5e14;
+    background-color: #ff14b5;
     width: auto;
     margin-right: -200px;
     right: 0;
