@@ -78,10 +78,9 @@ header{
     width: 100%;
     box-sizing: border-box;
 }
-.black{
+.scrolled{
     background-color: #000;
     z-index: 100;
-    
 }
 .navbar-top a{
     color:white;
@@ -122,7 +121,7 @@ header{
     font-weight: 600;
 }
 
-.navbar-top .menu-hamburger{
+.navbar-top .menu-hamburgers{
     display: none;
     position: absolute;
     top:50px;
@@ -140,8 +139,9 @@ header{
         top: 40px;
         left: 50px;
     }
-    .navbar-top .menu-hamburger{
+    .navbar-top .menu-hamburgers{
         display: block;
+        cursor: pointer;
     }
     .nav-links {
         top: 0;
@@ -169,6 +169,7 @@ header{
         margin: 25px 0;
         font-size:1.2em;
     }
+    
 }
 
 
@@ -212,7 +213,7 @@ img {
     display: block;
     font-size: 25px;
     line-height: 24px;
-    color: #00aeef;
+    color: orange;
     font-weight: 500;
     margin-bottom: 15px;
 }
@@ -265,11 +266,11 @@ img {
     font-weight: 600;
     overflow: hidden;
     letter-spacing: 0.02em;
-    background-color: #00aeef;
+    background-color: orange;
 }
 
 .btn-style-one:hover {
-    background-color: #0794c9;
+    background-color: orange;
     color: #ffffff;
 }
 
@@ -334,7 +335,7 @@ img {
     position: absolute;
     bottom: 16px;
     z-index: 1;
-    background: orange;
+    background:#00aeef;
     padding: 10px 15px;
     left: 96px;
     width: calc(100% - 152px);
@@ -367,7 +368,7 @@ img {
     left: -3px;
     background: transparent;
     z-index: 0;
-    border: 44px solid #00aeef;
+    border: 44px solid orange;
 }
 
 .about-section .image-column .image-1 {
@@ -559,7 +560,7 @@ p {
 .contact-form-page {
     padding: 80px 0 0;
     position: relative;
-    background: linear-gradient(#30303fe0, #1a1a3ebd), url(bg3.jpg) no-repeat;
+    background: linear-gradient(#30303fe0, #1a1a3ebd), url(bg-3.jpeg) no-repeat;
     color: #fff;
     background-position: center;
     background-size: cover;
@@ -1498,7 +1499,7 @@ ul {
 .card__collection .cards--two__tri:before {
     border-top: 220px solid transparent;
     border-bottom: 190px solid transparent;
-    border-right: 288px solid #57ccfd;
+    border-right: 288px solid #f07306;
     position: absolute;
     content: "";
     display: block;
@@ -1528,7 +1529,7 @@ ul {
     width: 100%;
     position: relative;
     height: 100%;
-    background: #f07306;
+    background:  #57ccfd;
     transform: translateY(200px);
     z-index: 2;
     transition: all 0.3s ease-in-out;
@@ -1655,7 +1656,7 @@ ul {
     display: block;
     width: 50px;
     height: 40px;
-    background: #57ccfd;
+    background: #57ccfd ;
     opacity: 1;
     position: absolute;
     left: 500%;

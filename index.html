@@ -55,7 +55,10 @@
             </ul>
 
         </div>
-        <img src="menu-btn.png" alt="menu hamburger" class = "menu-hamburger" >
+        
+            <img src="menu-btn.png" alt="menu hamburger" class = "menu-hamburgers" >
+
+        
     </nav>
     
     <header>
@@ -98,7 +101,7 @@
                             <h2>Painter</h2>
                             <span>New Look For Your new life</span>
                         </div>
-                        <figure class="image-1"><a href="#" class="lightbox-image" data-fancybox="images"><img title="paint" src="about1.jpg" alt=""></a></figure>
+                        <figure class="image-1"><a href="#" class="lightbox-image" data-fancybox="images"><img title="paint" src="about-2.jpg" alt=""></a></figure>
 
                     </div>
                 </div>
@@ -394,7 +397,7 @@
                         <div class="col-md-12">
                             <div class="section-heading-block">
                                 <h4 class="section-title text-light">
-                                    GET A QOUTE
+                                    Contact Us
                                 </h4>
 
                             </div>
@@ -567,15 +570,14 @@
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
 
     <script>
-        $(window).scroll(function(){
-            if($(window).scrollTop()){
-                $("#navbar-top").addClass("black");
-            }
-            else{
-                $("#navbar-top").removeClass("black");
-
-            }
-        })
+        window.addEventListener('scroll', function () {
+    const navLinks = document.querySelector('.navbar-top');
+    if (window.scrollY > 0) {
+        navLinks.classList.add('scrolled');
+    } else {
+        navLinks.classList.remove('scrolled');
+    }
+});
     </script>
     <script>
         (function($) {
@@ -671,7 +673,7 @@
     });
 </script>
 <script>
-    const menuHamburger = document.querySelector(".menu-hamburger")
+    const menuHamburger = document.querySelector(".menu-hamburgers")
         const navLinks = document.querySelector(".nav-links")
  
         menuHamburger.addEventListener('click',()=>{
@@ -709,11 +711,11 @@
     })();
 </script>
 <script>
-    const menuHamburger = document.querySelector(".menu-hamburger");
-const navLinks = document.querySelector(".nav-links");
+    const menuHamburger = document.querySelector(".menu-hamburgers");
+    const navLinks = document.querySelector(".nav-links");
 
 menuHamburger.addEventListener("click", () => {
-    navLinks.classList.toggle("show");
+    navLinks.classList.toggle("mobile-menu");
 });
 
 </script>
